@@ -73,3 +73,25 @@ when above command execute README.md file create in current folder
 open that file and write first line like this 
 (# Git and Github) first line is for heading
 then write lines you want
+
+To delete git repository
+-----     rm -rf .git
+rm --> remove
+
+-----     ls -al     --> To show all files and folders.
+-----     git ls-files     --> To show files and folders name
+-----     ls     --> To show all folders files and also hidden files and folders
+ 
+-----     clear  --> to clear terminal
+
+To rename a file 
+-----     git mv _____old_fileName_____ _____new_fileName_____
+this command remove old file and than create new file
+
+To delete file
+-----     git rm _____new_fileName_____
+
+To change Author name
+-----     git commit --amend --author "_____new_name_____" <_____new_email_____>
+(ex. git commit --amend -- author "Chirag Parmar" <chigsparmar07@gmail.com>)
+
