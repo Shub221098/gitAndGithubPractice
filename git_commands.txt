@@ -1,0 +1,75 @@
+* To Initialized empty Git repository in Current Folder
+-----     git init
+
+* Connect git folder to your github account
+-----     git config --global user.name ChigsParmar007
+or
+-----     git config --global user.email chigsparmar07@gmail.com
+
+.gitignore File
+if we not want to upload file/folder in github repository put that fle/folder name 
+here(.gitignore)
+(ex. folders like node_modules)
+
+git status commands
+-U --> stands for unstract file
+-A --> Active file
+-M --> modified files
+
+add all files in staging area 
+-----     git add -A
+-a --> all
+ 
+ when any change is made and then we need to rewrite git repository then use above command 
+
+to save/commit git repository
+-----     git commit -m 'initial commit'
+-m --> message
+'' --> any message/comment you want to give
+
+go to previous commit 
+-----     git reset --hard HEAD
+
+to see log file or history of last commits
+-----     git log
+
+if we want to undo code after final commit use command
+-----     git reset --hard _____id_____
+we got id from (git log) command
+id malse log mathi
+
+To create new branch 
+Branch stand for copy of current repository.
+here default repository is (master)
+
+-----     git branch _____give_name_of_the_banch_____
+
+To see all branch
+-----     git branch
+
+switch current branch for changes or see
+-----     git checkout _____branch_name_____
+
+Merge new branch to a master branch
+-----     git merge _____branch_name_____
+
+Delete branch
+-----     git branch --delete _____branch_name_____
+
+TO add git repository to github account
+1. Create new repository in github private
+2. copy first line which is at ... choose or push an existing repository from the command line
+    (ex. git remote add origin https://github.com/ChigsParmar007/git_and_github_practice.git)
+    origin name is default you can change is you want
+3. paste above link in vs code terminal or (cmd when you use cmd for command line)
+4. save that work use command 
+    -----     git push origin master
+    (here master is default branch if you want to add another branch simply put that branch name instedof master)
+
+To add README.md file
+-----     touch README.md
+
+when above command execute README.md file create in current folder
+open that file and write first line like this 
+(# Git and Github) first line is for heading
+then write lines you want
