@@ -1,0 +1,84 @@
+----- Initialized empty git repositiory
+git init
+
+----- config repositiory
+git config --global user.name ChigsParmar007
+git config --global user.email chigsparmar07@gmail.com
+
+----- check config file
+git config --global user.name
+git config --global user.email
+
+----- ls -lart
+show all hidden files and folders
+
+----- ls
+show only files and folders 
+
+----- git status
+show how many files are untracted, modified or unmodified
+
+----- git add .     or     git add -A
+move to staging area
+
+
+----- git commit -m 'message'
+save files in git repositiory
+when we create a new git repositiory we need to initial commit
+
+----- touch about.html
+create a new file
+
+----- git checkout -f
+return all changes to last commit
+
+----- git log
+shows how mant commits are their
+
+----- git log -p -5
+shows last 5 commits
+
+----- git diff
+compare current working directory to last commit directory
+
+----- git diff --staged
+compare staging area to last commit 
+
+----- git rm --cached <file name>
+remove file from staging area but present in untract file
+
+----- git rm <file name>
+delete file from everywhere
+
+----- git status -s
+show modifieds files short status
+
+----- git branch <branch name>
+add new branch
+
+----- git branch 
+show how many branches are their
+
+----- git checkout <branch name>
+change branch
+
+----- git merge <branch name>
+merge two branches
+
+----- git checkout -b <branch name>
+create new brach and go to new brach 
+
+----- git remote 
+shows how many remote repositiory are included
+
+----- git remote -v 
+shows link of git repositiory
+
+----- git remote set-url <url>
+change existing url for github repositiory
+
+----- git push -u origin <brach name>
+for push local repositiory data to github repositiory
+or next time we only need to write command for push is 
+-----  git push
+
