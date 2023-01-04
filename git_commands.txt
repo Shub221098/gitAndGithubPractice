@@ -6,6 +6,9 @@
 or
 -----     git config --global user.email chigsparmar07@gmail.com
 
+to see config file
+-----     git config --list
+
 .gitignore File
 if we not want to upload file/folder in github repository put that fle/folder name 
 here(.gitignore)
