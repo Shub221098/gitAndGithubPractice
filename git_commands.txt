@@ -44,14 +44,22 @@ here default repository is (master)
 
 -----     git branch _____give_name_of_the_banch_____
 
+create new branch and move that branch
+-----     git checkout -b <branch name>
+
 To see all branch
 -----     git branch
+To see git branches as well as github branches
+-----     git branch -a
 
 switch current branch for changes or see
 -----     git checkout _____branch_name_____
 
 Merge new branch to a master branch
 -----     git merge _____branch_name_____
+
+upload git branch to github
+-----     git push -u origin <branch name>
 
 Delete branch
 -----     git branch --delete _____branch_name_____
@@ -79,7 +87,7 @@ To delete git repository
 rm --> remove
 
 -----     ls -al     --> To show all files and folders.
------     git ls-files     --> To show files and folders name
+-----     git ls-files     --> To show files and folders name which is staging area
 -----     ls     --> To show all folders files and also hidden files and folders
  
 -----     clear  --> to clear terminal
@@ -94,4 +102,21 @@ To delete file
 To change Author name
 -----     git commit --amend --author "_____new_name_____" <_____new_email_____>
 (ex. git commit --amend -- author "Chirag Parmar" <chigsparmar07@gmail.com>)
+
+to create ssh key
+-----     ssh-keygen -t rsa -C "chigsparmar07@gmail.com"
+
+when we made some changes in github repositiory directly 
+and then we try to push git repositiory it will shows error
+at that time we need to fetch the github repositiory and 
+pull in git repositiory.
+-----     git fetch
+-----     git pull origin master
+
+when we change repositiory name in github we need to update that name in local repositiory(git repositiory) 
+at that time we need to clone github repositiory
+----- git remote set-url origin <ssh link from gihub>
+
+-----     git remote -v
+shows the git repositiory username and email and repositiory name also
 
