@@ -78,9 +78,6 @@ when we delete github branch and update this to local repositiory(git)
 delete remote brach using terminal
 -----     git push origin :<brach name>
 
-adding all remote branches in git repositiory
------     git pull --all
-
 
 TO add git repository to github account
 1. Create new repository in github private
@@ -130,6 +127,8 @@ at that time we need to fetch the github repositiory and
 pull in git repositiory.
 -----     git fetch
 -----     git pull origin master
+adding all remote branches in git repositiory
+-----     git pull --all
 
 when we change repositiory name in github we need to update that name in local repositiory(git repositiory) 
 at that time we need to clone github repositiory
@@ -137,3 +136,43 @@ at that time we need to clone github repositiory
 
 -----     git remote -v
 shows the git repositiory username and email and repositiory name also
+
+tag used for download git repositiory with perticular commit id
+
+-----     git tag
+give list of tags
+
+-----     git tag <tag name> <branch name>
+to create new tag
+this create light weight tags, light weight tag assosiated with last commit message
+this will get last commit id
+
+update tags
+when we create new commit we need to light weight tag to update
+-----     git tag -f <tag name> <commit id>
+after update remote repositiory
+-----     git push --force origin <tag name>
+
+-----     git tag -d <tag name>
+to delete a tag
+-----     git fetch -p
+-----     git tag -d <tag name>
+when we delte tag from remote repositiory we need to fetch and than delete tag in local repositiory
+
+delete tag in both remote and local repositiory using terminal
+-----     git tag -d <tag name>
+then
+-----     git push origin :<tag name>
+
+-----    git -a <tag name> "<any message>" <commit id>
+ex. git tag -a v0.1alpha -m "Release 0.1 (alpha)' f487f11
+to create a new tag with name and message with perticular commit id
+this created anoteted tags, anoteted tags assosiated with tag message
+
+-----     git push origin <tag name>
+ex. git push origin v0.1alpha
+to upload tag in remote repositiory
+
+-----     git push --tags
+to update all tags in remote repositiory
+
