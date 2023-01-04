@@ -12,7 +12,7 @@ here(.gitignore)
 (ex. folders like node_modules)
 
 git status commands
--U --> stands for unstract file
+-U --> stands for unstract filegit log --oneline --graph
 -A --> Active file
 -M --> modified files
 
@@ -137,4 +137,3 @@ at that time we need to clone github repositiory
 
 -----     git remote -v
 shows the git repositiory username and email and repositiory name also
-
