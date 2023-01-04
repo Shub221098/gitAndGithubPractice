@@ -33,6 +33,9 @@ go to previous commit
 to see log file or history of last commits
 -----     git log
 
+show logs in graphical order 
+-----     git log --oneline --graph
+
 if we want to undo code after final commit use command
 -----     git reset --hard _____id_____
 we got id from (git log) command
@@ -63,6 +66,21 @@ upload git branch to github
 
 Delete branch
 -----     git branch --delete _____branch_name_____
+or
+-----     git branch --d _____branch_name_____
+
+if we forcefully delete a branch 
+-----     git branch --D <branch name>
+
+when we delete github branch and update this to local repositiory(git)
+-----    git fetch -p
+
+delete remote brach using terminal
+-----     git push origin :<brach name>
+
+adding all remote branches in git repositiory
+-----     git pull --all
+
 
 TO add git repository to github account
 1. Create new repository in github private
