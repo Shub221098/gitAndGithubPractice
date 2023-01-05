@@ -28,7 +28,7 @@ to see all configration
 To change Author name
 (ex. git commit --amend -- author "Chirag Parmar <chigsparmar07@gmail.com>")
 
-**********
+**************************************************
 -----     touch index.html
 To Create new files
 
@@ -38,7 +38,12 @@ To Rename file name
 -----     git rm <file name>
 To delete file
 
-**********
+-----     ls -al     --> To show all files and folders.
+-----     git ls-files     --> To show files and folders name which is staging area
+-----     ls     --> To show all folders files and also hidden files and folders
+-----     clear  --> to clear terminal
+
+**************************************************
 -----     git clone git@github.com:ChigsParmar007/gitAndGithubPractice.git
 To add remote branch to local (clone)
 
@@ -63,7 +68,7 @@ or
 Add git repositiory to remote repositiory
 there are sevral commands in this
 
-**********
+**************************************************
 Branch stand for copy of current repository.
 here default repository is (master)
 
@@ -101,3 +106,68 @@ To delete local branch forcefully
 -----     git push origin :<branch name>
 To delete remote branch using terminal
 
+-----     rm -rf .git
+To delete git(local) repository
+
+**************************************************
+
+when we made some changes in github repositiory directly 
+and then we try to push git repositiory it will shows error
+at that time we need to fetch the github repositiory and 
+pull in git repositiory.
+-----     git fetch
+-----     git pull origin master
+above add only remote master branch to local master branch
+-----     git pull origin <branch>
+
+
+adding all remote branches in git repositiory
+-----     git pull --all
+
+----- git remote set-url origin <ssh link from gihub>
+when we change repositiory name in remote(github) we need to update that name in local repositiory(git repositiory) 
+at that time we need to clone github repositiory
+
+-----     git remote -v
+shows the git repositiory username and email and repositiory name also
+
+
+**************************************************
+tag used for download git repositiory with perticular commit id
+
+-----     git tag
+give list of tags
+
+-----     git tag <tag name> <branch name>
+to create new tag
+this create light weight tags, light weight tag assosiated with last commit message
+this will get last commit id
+
+update tags
+when we create new commit we need to light weight tag to update
+-----     git tag -f <tag name> <commit id>
+after update remote repositiory
+-----     git push --force origin <tag name>
+
+-----     git tag -d <tag name>
+to delete a tag
+-----     git fetch -p
+-----     git tag -d <tag name>
+when we delte tag from remote repositiory we need to fetch and than delete tag in local repositiory
+
+delete tag in both remote and local repositiory using terminal
+-----     git tag -d <tag name>
+then
+-----     git push origin :<tag name>
+
+-----    git -a <tag name> "<any message>" <commit id>
+ex. git tag -a v0.1alpha -m "Release 0.1 (alpha)' f487f11
+to create a new tag with name and message with perticular commit id
+this created anoteted tags, anoteted tags assosiated with tag message
+
+-----     git push origin <tag name>
+ex. git push origin v0.1alpha
+to upload tag in remote repositiory
+
+-----     git push --tags
+to update all tags in remote repositiory

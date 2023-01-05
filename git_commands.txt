@@ -81,7 +81,6 @@ when we delete github branch and update this to local repositiory(git)
 delete remote brach using terminal
 -----     git push origin :<brach name>
 
-
 TO add git repository to github account
 1. Create new repository in github private
 2. copy first line which is at ... choose or push an existing repository from the command line
@@ -107,7 +106,6 @@ rm --> remove
 -----     ls -al     --> To show all files and folders.
 -----     git ls-files     --> To show files and folders name which is staging area
 -----     ls     --> To show all folders files and also hidden files and folders
- 
 -----     clear  --> to clear terminal
 
 To rename a file 
