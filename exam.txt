@@ -39,3 +39,6 @@
 15 -> git add .
       git commit -m 'change title'
       git push origin fix-title-001
+
+20 -> git checkout -b fic-title-002
+      
