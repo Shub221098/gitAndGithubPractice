@@ -28,6 +28,7 @@ to see all configration
 To change Author name
 (ex. git commit --amend -- author "Chirag Parmar <chigsparmar07@gmail.com>")
 
+**********
 -----     touch index.html
 To Create new files
 
@@ -36,4 +37,67 @@ To Rename file name
 
 -----     git rm <file name>
 To delete file
+
+**********
+-----     git clone git@github.com:ChigsParmar007/gitAndGithubPractice.git
+To add remote branch to local (clone)
+
+-----     git remote add origin https://github.com/ChigsParmar007/gitAndGithubPractice.git
+To create new repositiory in remote 
+
+**********
+-----     git add .
+or
+-----     git add -A
+Add all files in staging area.
+
+-----     git add <file name>
+Add only one file in staging area
+
+-----     git commit -m "commit message"
+Add changes in git repositiory
+
+-----     git push origin master
+or
+-----     git push
+Add git repositiory to remote repositiory
+there are sevral commands in this
+
+**********
+Branch stand for copy of current repository.
+here default repository is (master)
+
+-----     git branch <branch name>
+To create new branch
+
+-----     git checkout <branch name>
+To switch one branch to another branch
+
+-----     git checkout -b <branch name>
+To create new branch and switch current branch to new created branch
+
+-----     git branch
+To see all local branches
+
+-----     git branch -a
+To see local and remote branches also
+
+-----     git merge <branch name>
+Merge current branch with another branch
+
+-----     git push origin <branch name>
+or
+-----     git push -u origin <branch name>
+To upload local branch to remote
+
+-----     git branch --delete <branch name>
+or
+-----     git branch --d <branch name>
+To delete local branch
+
+-----     git branch -D <branch name>
+To delete local branch forcefully
+
+-----     git push origin :<branch name>
+To delete remote branch using terminal
 
