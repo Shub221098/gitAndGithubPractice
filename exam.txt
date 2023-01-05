@@ -40,5 +40,17 @@
       git commit -m 'change title'
       git push origin fix-title-001
 
+19 -> 
 20 -> git checkout -b fic-title-002
-      
+      git add .
+      git commit -m 'create fic-title-002 branch'
+      git push origin fic-title-002
+      git stash
+      git stash pop
+      git diff
+      git add .
+      git reset index.html
+      git status
+      git add .
+      git commit -m 'final commit'
+      git push origin tic-title-002
