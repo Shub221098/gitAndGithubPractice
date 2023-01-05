@@ -1,0 +1,39 @@
+-----     ssh-keygen -t rsa -C "chigsparmar07@gmail.com"
+To create ssh key
+Home/.shh/id_rsa.pub
+
+-----     git init
+To Initialized empty Git repository in Current Folder
+
+-----     git config --global user.email <email>
+-----     git config --global user.name <user name>
+To set global username and email
+
+-----     git config user.email <email>
+-----     git config user.name <user name>
+to set local(folder) username and email
+
+-----     git config --global user.name
+-----     git config --global user.email
+to see global username and email
+
+-----     git config user.name
+-----     git config user.email
+to see local username and email
+
+-----     git config --list
+to see all configration
+
+-----     git commit --amend --author "New Author Name <New Author Email>"
+To change Author name
+(ex. git commit --amend -- author "Chirag Parmar <chigsparmar07@gmail.com>")
+
+-----     touch index.html
+To Create new files
+
+-----     git mv <old file name> <new file name>
+To Rename file name
+
+-----     git rm <file name>
+To delete file
+

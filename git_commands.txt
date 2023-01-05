@@ -117,9 +117,6 @@ this command remove old file and than create new file
 To delete file
 -----     git rm _____new_fileName_____
 
-To change Author name
------     git commit --amend --author "_____new_name_____" <_____new_email_____>
-(ex. git commit --amend -- author "Chirag Parmar" <chigsparmar07@gmail.com>)
 
 to create ssh key
 -----     ssh-keygen -t rsa -C "chigsparmar07@gmail.com"
@@ -178,4 +175,3 @@ to upload tag in remote repositiory
 
 -----     git push --tags
 to update all tags in remote repositiory
-
