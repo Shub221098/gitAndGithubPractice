@@ -28,6 +28,17 @@ to see all configration
 To change Author name
 (ex. git commit --amend -- author "Chirag Parmar <chigsparmar07@gmail.com>")
 
+----- git remote 
+shows how many remote repositiory are included
+
+----- git remote -v 
+shows link of git repositiory
+
+.gitignore File
+if we not want to upload file/folder in github repository put that fle/folder name 
+here(.gitignore)
+(ex. folders like node_modules)
+
 **************************************************
 -----     touch index.html
 To Create new files
@@ -39,6 +50,7 @@ To Rename file name
 To delete file
 
 -----     ls -al     --> To show all files and folders.
+-----     ls -lart     --> show all hidden files and folders
 -----     git ls-files     --> To show files and folders name which is staging area
 -----     ls     --> To show all folders files and also hidden files and folders
 -----     clear  --> to clear terminal
@@ -56,17 +68,50 @@ or
 -----     git add -A
 Add all files in staging area.
 
+-----     git add -p 
+it will show the file changed and ask for staging confirmation
+
 -----     git add <file name>
 Add only one file in staging area
 
 -----     git commit -m "commit message"
 Add changes in git repositiory
 
+-----     git commit --amend 
+Override the last commit
+
 -----     git push origin master
 or
 -----     git push
 Add git repositiory to remote repositiory
 there are sevral commands in this
+
+
+**************************************************
+-----     git status
+To see status of git repository
+
+----- git status -s
+show modifieds files short status
+
+-----     git log
+To see log files or commits
+
+----- git log -p -5
+shows last 5 commits
+
+-----     git log --oneline
+To see commit id and message only
+
+-----     git log --oneline --graph
+To see commits in graph formate
+
+----- git diff
+compare current working directory to last commit directory
+
+----- git diff --staged
+compare staging area to last commit 
+
 
 **************************************************
 Branch stand for copy of current repository.
@@ -92,7 +137,7 @@ Merge current branch with another branch
 
 -----     git push origin <branch name>
 or
------     git push -u origin <branch name>
+-----     git push -u origin <branch name>sta
 To upload local branch to remote
 
 -----     git branch --delete <branch name>
@@ -171,3 +216,62 @@ to upload tag in remote repositiory
 
 -----     git push --tags
 to update all tags in remote repositiory
+
+**************************************************
+-----     git stash list
+TO see stash list
+
+-----     git stash show <stash id>
+To see perticular stash information
+
+-----     git stash drop
+To delete last created stash
+
+-----     git stash drop <stash id>
+To delete perticular stash
+
+-----     git stash pop
+To apply last stash and delete as well
+
+-----     git stash push -m '<message>'
+To create stash with perticular message
+
+-----     git stash clear
+to delete all stash
+
+**************************************************
+reset Command
+
+-----     git reset --soft HEAD^
+To reset undo changes to the file
+It delete commit but changes are there
+
+-----     git reset --hard HEAD^
+It delete last commit as well as delete changes.
+In short it will go to last to second commit.
+To reset undo changes and removes the assosiated files from the working directory, staging area and commit history.
+
+-----     git reset --hard HEAD~1
+it will delete all uncommited changes and all untracked files in addition to the  changes introduced in last commit.
+
+----- git checkout -f
+return all changes to last commit
+
+
+-----     git reset --hard <commit id>
+if we want to undo code at perticular commit use command
+we got id from (git log) command
+
+**************************************************
+-----     git branch --merged
+To see already merged branches
+
+-----     git branch --no-merged
+To see not already merged branches
+
+-----     git merge <branch name>
+To merge current branch to another branch
+
+-----     git help --all
+To see all commands list and descriptions
+
