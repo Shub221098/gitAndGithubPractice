@@ -1,0 +1,87 @@
+01 --> 
+
+02 --> 
+
+03 -->  git config --global user.name Chirag_parmar
+	git config --global user.email parmar.chirag.dcs23@vnsgu.ac.in
+	
+04 -->  git config user.name Chigs
+	git config user.email pc9175486@gmail.com
+	
+05 -->  git branch develop
+	git branch stage
+	git branch production
+
+06 -->	
+
+07 -->  git checkout -b fix-issue-001
+
+08 -->  touch index.html
+	git add .
+	git commit -m 'fix issue 1, close #1'
+	git push origin fix-issue-001
+	
+09 -->  git checkout develop
+	git pull origin fix-issue-001
+	git push origin develop
+	
+10 -->
+
+11  --> git checkout main
+	git pull origin develop
+	git push origin main
+	
+	git checkout stage
+	git pull origin main
+	git push origin stage
+	
+	git checkout production
+	git pull origin stage
+	git push origin production
+
+12 --> git checkout -b fix-title
+
+13 -->  git add .
+	git commit -m 'Change title in fix-title branch'
+	git push origin fix-title
+
+14 -->  git checkout -b fix-title-001
+
+15 -->  git add .
+	git commit -m 'change title in fix-title-001 branch'
+	git push origin fix-title-001
+	
+16 -->
+	
+17 -->  
+	
+18 -->  
+
+19 -->  git checkout develop
+	git pull origin fix-title-001
+	git push origin develop 
+	
+	git checkout main
+	git pull origin develop
+	git push origin main
+	
+	git checkout stage
+	git pull origin main
+	git push origin stage 
+	
+	git checkout production
+	git pull origin stage
+	git push origin production 
+	
+20 -->  git checkout -b fix-title-002
+
+21 -->  git stash 
+	git stash pop
+	git diff
+	git status
+	git add .
+	git reset --soft HEAD^
+	git status
+	git add .
+	git commit -m 'final exam commit'
+	git push origin fix-title-002

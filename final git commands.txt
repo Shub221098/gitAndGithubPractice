@@ -60,7 +60,7 @@ To delete file
 To add remote branch to local (clone)
 
 -----     git remote add origin https://github.com/ChigsParmar007/gitAndGithubPractice.git
-To create new repositiory in remote 
+To create new repositiory in remote 001
 
 **********
 -----     git add .
@@ -79,12 +79,12 @@ Add changes in git repositiory
 
 -----     git commit --amend 
 Override the last commit
+It will change last commit message and it will aslo take changes after last commit
 
 -----     git push origin master
 or
 -----     git push
 Add git repositiory to remote repositiory
-there are sevral commands in this
 
 
 **************************************************
@@ -104,7 +104,7 @@ shows last 5 commits
 To see commit id and message only
 
 -----     git log --oneline --graph
-To see commits in graph formate
+To see commits in graph format
 
 ----- git diff
 compare current working directory to last commit directory
@@ -160,11 +160,11 @@ when we made some changes in github repositiory directly
 and then we try to push git repositiory it will shows error
 at that time we need to fetch the github repositiory and 
 pull in git repositiory.
+
 -----     git fetch
 -----     git pull origin master
 above add only remote master branch to local master branch
 -----     git pull origin <branch>
-
 
 adding all remote branches in git repositiory
 -----     git pull --all
@@ -178,7 +178,7 @@ shows the git repositiory username and email and repositiory name also
 
 
 **************************************************
-tag used for download git repositiory with perticular commit id
+tag is used for download git repositiory with perticular commit id
 
 -----     git tag
 give list of tags
@@ -191,21 +191,21 @@ this will get last commit id
 update tags
 when we create new commit we need to light weight tag to update
 -----     git tag -f <tag name> <commit id>
-after update remote repositiory
+after update local tag we need to update remote tag also
 -----     git push --force origin <tag name>
 
 -----     git tag -d <tag name>
 to delete a tag
 -----     git fetch -p
 -----     git tag -d <tag name>
-when we delte tag from remote repositiory we need to fetch and than delete tag in local repositiory
+when we delete tag from remote repositiory we need to fetch and than delete tag in local repositiory
 
 delete tag in both remote and local repositiory using terminal
 -----     git tag -d <tag name>
 then
 -----     git push origin :<tag name>
 
------    git -a <tag name> "<any message>" <commit id>
+-----    git tag -a <tag name> -m "<any message>" <commit id>
 ex. git tag -a v0.1alpha -m "Release 0.1 (alpha)' f487f11
 to create a new tag with name and message with perticular commit id
 this created anoteted tags, anoteted tags assosiated with tag message
@@ -259,7 +259,7 @@ return all changes to last commit
 
 
 -----     git reset --hard <commit id>
-if we want to undo code at perticular commit use command
+if we want to undo changes at perticular commit use this command
 we got id from (git log) command
 
 **************************************************
@@ -274,4 +274,16 @@ To merge current branch to another branch
 
 -----     git help --all
 To see all commands list and descriptions
+
+**************************************************
+-----     git restore --staged <file name>
+It will get back staged content to working area only in perticular file
+
+-----     git restore --staged .
+It will get back staged content to working area all the files
+
+in short restore move files staging area to working area
+
+**************************************************
+-----     git rebase <branch name>
 
