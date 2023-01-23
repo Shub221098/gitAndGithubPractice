@@ -224,6 +224,9 @@ TO see stash list
 -----     git stash show <stash id>
 To see perticular stash information
 
+-----     git stash apply (stashid)
+To again fetch the changes from stash
+
 -----     git stash drop
 To delete last created stash
 
@@ -238,6 +241,12 @@ To create stash with perticular message
 
 -----     git stash clear
 to delete all stash
+
+-----     git diff >> sample.patch
+To share the stash code other collabrator by using patch.
+
+-----     git apply sample.patch
+To get the stash code by collabrator from sample.patch file.
 
 **************************************************
 reset Command
