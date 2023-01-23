@@ -248,6 +248,14 @@ To share the stash code other collabrator by using patch.
 -----     git apply sample.patch
 To get the stash code by collabrator from sample.patch file.
 
+-----     git rebase (branchname)
+This method is used to merge commits from one branch to another but it will not commit one extra commit suppose if we have main branch having 3 commits
+and feature branch having 2 commits then we use rebase so in main branch only total 5 commits are shown but in merge method it will 6 commits.
+
+
+-----     git squash (branchname)
+This method we also take same example as rebase it will show only 4 commits in main branch it will mix feature branch commits in single commit.
+
 **************************************************
 reset Command
 
@@ -270,6 +278,12 @@ return all changes to last commit
 -----     git reset --hard <commit id>
 if we want to undo changes at perticular commit use this command
 we got id from (git log) command
+
+-----     git cherry pick (commitid)
+this command will take that commit from one branch to other branch we will not do this with rebase or squash because we only want one commit.
+
+-----    git cherry pick (commitid) -n
+this command will take changes from one branch to other branch but not take commit message.
 
 **************************************************
 -----     git branch --merged
